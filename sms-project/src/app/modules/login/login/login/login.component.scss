@@ -1,0 +1,50 @@
+.login-body {
+    background-color: #191e24;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.card-log{
+    border-radius: 0.8em;
+    background-color: #21262f;
+    padding: 2em 1.5em;
+}
+
+.input-log{
+    background-color: #191e24;
+    border-color: #191e24;
+    color: #ffffff;
+}
+
+.btn-log{
+    border-radius: 0.8em;
+    background-color: #ffdc68;
+    color: black;
+    margin-top: 4em;
+}
+
+.text-login{
+    padding-bottom: 0.7em;
+    font-size: 2.5vh;
+}
+
+
+
+
+

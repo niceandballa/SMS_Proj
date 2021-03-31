@@ -1,0 +1,68 @@
+.login-body {
+    background-color: #191e24;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 10rem 0 0;
+}
+
+.card-log{
+    border-radius: 0.8em;
+    background-color: #21262f;
+    padding: 1.5em 3em;
+}
+
+.btn-create{
+    font-size: 1vw;
+    border-radius: 0.8em;
+    background-color: #ffdc68;
+    color: black;
+}
+
+.tab-table{
+    background-color: #191e24;
+    height: 3em;
+    margin: 1.5em 0;
+    border-radius: 0.8em;
+}
+
+.text-table{
+    color: #8c8e91;
+    display: flex;
+    align-self: center;
+}
+
+.text-detial{
+    color: white;
+    display: flex;
+    align-self: center;
+}
+
+.list-option{
+    text-decoration: underline;
+    color: #ffdc68;
+    padding: 0 10px;
+}
+
+.verticelLine{
+    background-color: #2f333b;
+    width:100%;
+}
+
+
+
+
+

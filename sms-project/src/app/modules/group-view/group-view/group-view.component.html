@@ -1,0 +1,38 @@
+<div class="login-body">
+    <div style="height: 100vh;">
+      <div class="row middle">
+        <div class="col-8 col-xl-7 card-log">
+          <div class="row">
+            <div class="col-10">
+              <label class="text-white pt-2" style="font-size: 1.3vw;"><b>รายการกลุ่มทั้งหมด</b></label>
+            </div>
+            <div class="col-2" style="display: flex;">
+              <button type="button" class="btn btn-create btn-block"><b>สร้างกลุ่ม</b></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 tab-table">
+              <div class="row h-100">
+                <div class="col-6 text-table">ชื่อกลุ่ม</div>
+                <div class="col-2 text-table">จำนวนยูส</div>
+                <div class="col-4 text-table" style="justify-content: flex-end;">คำสั่ง</div>
+              </div>
+            </div>
+          </div>
+          <div class="row" *ngFor="let data of dataGroup">
+            <div class="col-12">
+              <div class="row h-100">
+                <div class="col-6 text-detial">{{data.groupName}}</div>
+                <div class="col-2 text-detial">{{data.countID}}</div>
+                <div class="col-4 text-detial" style="justify-content: flex-end;">
+                  <span class="list-option">แก้ไข</span>
+                  <span class="list-option">ดูรายการ</span>
+                </div>
+                <hr class="verticelLine">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
