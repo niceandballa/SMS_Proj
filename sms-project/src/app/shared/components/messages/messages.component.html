@@ -1,0 +1,12 @@
+<div class="container-fluid" *ngIf="messages">
+    <div class="row">
+        <div class="col-12" style="background: #21262f; padding: 1em 2em; border-radius: 0.8rem;">
+            <div style="color: white; font-size: 0.9vw;">รหัส OTP สำหรับ {{messages.company}} คือ (Ref No. {{messages.ref}})</div>
+            <div style="color: white; font-size: 0.8vw;">OTP ใช้ได้ภายใน 5 นาทีเพื่อความปลอดภัย โปรดอย่างแจ้งรหัส OTP กับผู้อื่น</div>
+            <div style="color: #ffdc68; font-size: 0.8vw; margin-top: 1.5em;">027777777</div>
+        </div>
+        <div class="col-12">
+            <div style="text-align:end; color: white; font-size: 0.85vw; margin-top: 0.6em;">{{messages.userName}} : {{time | date:'hh:mm:ss'  }} </div>
+        </div>
+    </div>
+</div>

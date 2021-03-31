@@ -1,0 +1,40 @@
+.page-body {
+    background-color: #191e24;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn-add{
+    font-size: 0.8vw;
+    border-radius: 0.8em;
+    background-color: #ffdc68;
+    color: black;
+}
+
+.online{
+    height: 10px;
+    width: 10px;
+    background-color: #12c48b;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.offline{
+    background-color: #e56a66 !important;
+}
+
+.verticelLine{
+    background-color: #2f333b;
+    width:95%;
+}
+
+
+
+
+
+

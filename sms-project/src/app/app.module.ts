@@ -3,20 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GroupMessageModule } from './modules/group-message/group-message.module';
 import { GroupViewModule } from './modules/group-view/group-view.module';
-import { GroupViewComponent } from './modules/group-view/group-view/group-view.component';
 import { LoginModule } from './modules/login/login.module';
-import { LoginComponent } from './modules/login/login/login/login.component';
+import { SharedModule } from './shared/shared/shared.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    GroupViewModule
+    GroupViewModule,
+    GroupMessageModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
