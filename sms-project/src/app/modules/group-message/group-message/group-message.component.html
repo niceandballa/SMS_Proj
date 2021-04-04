@@ -10,11 +10,11 @@
                         <div class="col-12" style="height: auto; border: 1px solid #303439; border-radius: 1rem; padding: 1.5em 2em 0.5em;">
                             <div class="row" style="margin-bottom: 1em;">
                                 <div class="col" style="font-size: 1vw; color: white;"><b>ข้อมูลการส่งออก</b></div>
-                                <div class="col-5 col-lg-4"><button type="button" class="btn btn-block btn-add" ><b>+ เพิ่ม</b></button></div>
+                                <div class="col-5 col-lg-4"><button type="button" class="btn btn-block btn-add" (click)="addEndpoint()"><b>+ เพิ่ม</b></button></div>
                             </div>
                             <div class="row" *ngFor="let data of dataRest">
                                 <div class="col" style="font-size: 0.8vw; color: white;">{{data.restGroupName}}</div>
-                                <div class="col-5 col-lg-4" style="text-align-last: end; font-size: 0.8vw; text-decoration: underline; color: #ffdc68;">แก้ไข</div>
+                                <div class="col-5 col-lg-4 text-click">แก้ไข</div>
                                 <hr class="verticelLine">
                             </div>
                         </div>
@@ -23,21 +23,21 @@
                         <div class="col-12" style="height: auto; border: 1px solid #303439; border-radius: 1rem; padding: 1.5em 2em 0.5em;">
                             <div class="row" style="margin-bottom: 1em;">
                                 <div class="col" style="font-size: 1vw; color: white;"><b>รายการยูเซอร์</b></div>
-                                <div class="col-5 col-lg-4"><button type="button" class="btn btn-block btn-add" ><b>+ เพิ่ม</b></button></div>
+                                <div class="col-5 col-lg-4"><button type="button" class="btn btn-block btn-add" (click)="addUser()"><b>+ เพิ่ม</b></button></div>
                             </div>
                             <div class="row" *ngFor="let data of dataUsers">
                                 <div class="col" style="font-size: 0.8vw; color: white;">
                                     <span>{{data.userName}} </span>
                                     <span class="online ml-2" [ngClass]="{'offline': !data.online}"></span>
                                 </div>
-                                <div class="col-3 col-lg-2" style="text-align-last: end; font-size: 0.8vw; text-decoration: underline; color: #ffdc68;">ดู</div>
-                                <div class="col-2 col-lg-2" style="text-align-last: end; font-size: 0.8vw; text-decoration: underline; color: #ffdc68;">แก้ไข</div>
+                                <a class="col-3 col-lg-2 text-click btn p-0" (click)="viewUser(data.userName)">ดู</a>
+                                <a class="col-2 col-lg-2 text-click btn p-0">แก้ไข</a>
                                 <hr class="verticelLine">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mt-4" style="height: auto; border-radius: 1rem; padding: 0 2em;">
+                <div class="col mt-4" style="padding: 0 2em;">
                     <app-messages *ngFor="let messages of messages" [messages]="messages"></app-messages>
                 </div>
             </div>

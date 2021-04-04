@@ -1,12 +1,5 @@
 .page-body {
     background-color: #191e24;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
 }
 
 .btn-add{
@@ -32,6 +25,20 @@
     background-color: #2f333b;
     width:95%;
 }
+
+.text-click{
+    text-align-last: end; font-size: 0.8vw; text-decoration: underline; color: #ffdc68;
+}
+
+.scroll {  
+    padding:10px;
+    padding-right: 20px; 
+    width: auto; 
+    height: 50vh; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    text-align:justify; 
+} 
 
 
 

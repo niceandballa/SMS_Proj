@@ -1,0 +1,26 @@
+<div class="page-body">
+    <div class="row mt-4" style="display: flex; justify-content: center;">
+        <div class="col-7 text-white" style="font-size: 3rem;">DDLIGAZ Group - {{userID}}</div>
+    </div>
+    <div class="row" style="display: flex; justify-content: center;">
+        <div class="col-7">
+            <div class="row">
+                <div class="col-5 col-xl-5" style="color: white;">
+                    <div class="row mt-4">
+                        <div class="col-12" style="height: 20vh; border: 1px solid #303439; border-radius: 1rem; padding: 1.5em 2em 0.5em;">
+                            เว้นไว้ใส่ Filter
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12" style="height: 20vh; border: 1px solid #303439; border-radius: 1rem; padding: 1.5em 2em 0.5em;">
+                           เว้นไว้ใส่ metadata
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4" style="padding: 0 2em;">
+                    <app-messages *ngFor="let message of message" [messages]="message"></app-messages>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

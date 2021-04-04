@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-group-message',
@@ -28,9 +29,21 @@ export class GroupMessageComponent implements OnInit {
     { userName: 'ddk_wrp', company: 'GIF', otp: '211113', ref: 'C11B24'},
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  addEndpoint(){
+    this.router.navigate(['group-message/new-endpoint']);
+  }
+
+  addUser(){
+    this.router.navigate(['group-message/new-user']);
+  }
+
+  viewUser(userID: string){
+    this.router.navigate(['user-message/', userID]);
   }
 
 }
